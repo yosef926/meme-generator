@@ -1,0 +1,19 @@
+.InputLabel--title {
+    color: #374151;
+    font-weight: 800;
+}
+
+
+.InputLabel--instruction {
+    display: flex;
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: groove;
+    margin-top: -10px;
+    margin-right: 50px;
+    font-weight: 500;
+    color: #6B7280;
+    align-items: center;
+    padding-left: 10px;
+}
