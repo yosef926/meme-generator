@@ -1,6 +1,6 @@
 .Navbar--div {
     height: 75px;
-    width: 700px;
+    width: 100%;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
     display: flex;
     align-items: center;
@@ -23,6 +23,6 @@
 
 .Navbar--projectState {
     font-size: 15px;
-    margin-left: 300px;
+    margin-left: 140px;
     font-weight: 500;
 }

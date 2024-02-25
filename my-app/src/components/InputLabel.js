@@ -2,17 +2,11 @@ import React, {useState} from "react"
 import "../styles/InputLabel.css"
 
 
-export default function InputLabel() {
+export default function InputLabel(memeState) {
 
-    const [formData, setInput] = useState({
-        leftInput: "",
-        rightInput: ""
-    })
-
-    console.log(formData)
     function handleChange(event) {
         const {name, value} = event.target
-        setInput(prevFormData => {
+        memeState.setMeme(prevFormData => {
             return {
                 ...prevFormData,
                 [name]: value
@@ -26,19 +20,19 @@ export default function InputLabel() {
             <form>
                 <input 
                     type="text"
-                    className="leftInput"
+                    className="topText"
                     placeholder="Top text"
                     onChange={handleChange}
-                    name="leftInput"
-                    value={formData.leftInput}
+                    name="topText"
+                    value={memeState.meme.topText}
                 />
                 <input
                     type="text"
-                    className="rightInput"
+                    className="bottomText"
                     placeholder="Bottom text"
                     onChange={handleChange}
-                    name="rightInput"
-                    value={formData.rightInput}
+                    name="bottomText"
+                    value={memeState.meme.bottomText}
                 />
             </form>
         </div>

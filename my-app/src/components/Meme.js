@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import "../styles/Meme.css"
-import InputLabel from "./InputLabel.js"
-import CreateImgButton from "./CreateImgButton.js"
+import InputLabel from "./inputLabel.js"
+import CreateImg from "./CreateImg.js"
 
 
 export default function Meme() {
@@ -14,10 +14,16 @@ export default function Meme() {
 
     return (
         <div className="Meme--div">
-            <div className="Meme--inputLabels">
-                <InputLabel />
+            <div>
+                <InputLabel 
+                    meme={meme}
+                    setMeme={setMeme}
+                />
             </div>
-            <CreateImgButton />
+            <CreateImg 
+                meme={meme}
+                setMeme={setMeme}
+            />
         </div>
     )
 }

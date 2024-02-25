@@ -1,11 +1,12 @@
 .InputLabel--div {
-    margin-bottom: 30px;
-    margin-left: 25%;
+    margin-bottom: 2rem;
+    margin-left: 40px;
+    max-width: 100%;
 }
 
 
-.leftInput {
-    margin-right: 100px;
+.bottomText {
+    margin-left: 50px;
 }
 
 
