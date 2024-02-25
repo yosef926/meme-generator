@@ -1,23 +1,21 @@
-import React from "react"
+import React, {useState} from "react"
 import "../styles/Meme.css"
 import InputLabel from "./InputLabel.js"
-import inputLabelInformation from "../inputLabelInformation.js"
 import CreateImgButton from "./CreateImgButton.js"
 
 
 export default function Meme() {
-    const inputLabels = inputLabelInformation.map(labelInfo => {
-        return (
-            <InputLabel
-                key={labelInfo.id}
-                {...labelInfo}
-            />
-        )
-    })
+
+    const [meme, setMeme] = useState({
+        topText: "",
+        bottomText: "",
+        randomImage: "https://i.imgflip.com/3lmzyx.jpg"
+    }) 
+
     return (
         <div className="Meme--div">
             <div className="Meme--inputLabels">
-                {inputLabels}
+                <InputLabel />
             </div>
             <CreateImgButton />
         </div>

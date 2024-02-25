@@ -1,13 +1,25 @@
-.InputLabel--title {
+.InputLabel--div {
+    margin-bottom: 30px;
+    margin-left: 25%;
+}
+
+
+.leftInput {
+    margin-right: 100px;
+}
+
+
+
+/* .InputLabel--title {
     color: #374151;
     font-weight: 800;
 }
 
 
 .InputLabel--instruction {
+    height: 40px;
     display: flex;
     width: 270px;
-    height: 40px;
     border-radius: 10px;
     border-style: groove;
     margin-top: -10px;
@@ -15,5 +27,6 @@
     font-weight: 500;
     color: #6B7280;
     align-items: center;
-    padding-left: 10px;
-}
+    padding-left: 0.625rem;
+    margin-bottom: 30px;
+} */
